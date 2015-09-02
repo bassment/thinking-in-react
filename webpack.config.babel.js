@@ -7,7 +7,7 @@ var TARGET = process.env.npm_lifecycle_event;
 var ROOT_PATH = path.resolve(__dirname);
 
 var common = {
-  entry: path.resolve(ROOT_PATH, 'app/main'),
+  entry: path.resolve(ROOT_PATH, 'app/main.jsx'),
   output: {
     path: path.resolve(ROOT_PATH, 'build'),
     filename: 'build.js'
@@ -17,6 +17,11 @@ var common = {
     {
       test: /\.css$/,
       loaders: ['style', 'css'],
+      include: path.resolve(ROOT_PATH, 'app')
+    },
+    {
+      test: /\.jsx?$/,
+      loaders: ['react-hot', 'babel'],
       include: path.resolve(ROOT_PATH, 'app')
     }
     ]
