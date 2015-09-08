@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Note from './Note.jsx';
+import FilterableProductTable from './FilterableProductTable.jsx';
 
 export default class App extends Component {
   render() {
-    return <Note />;
+    return <FilterableProductTable />;
   }
 }

@@ -20,6 +20,7 @@
     "webpack-merge": "^0.2.0"
   },
   "dependencies": {
+    "re-base": "^1.1.2",
     "react": "^0.13.3"
   }
 }
